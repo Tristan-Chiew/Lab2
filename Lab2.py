@@ -30,8 +30,9 @@ def sort_temperature():
     return
 
 def calc_median_temperature():
-    print("find median temp")
-    return
+    nos = input("Enter some numbers seperated by commas (e.g 5,67,32)")
+    total = len(nos)
+    return nous[int(total)]
 
 def calc_average_temperature():
     temps = input("Enter all the temps seperated by a comma")
