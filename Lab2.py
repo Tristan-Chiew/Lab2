@@ -15,9 +15,9 @@ def get_user_input():
        Nout.append(float(num))
     return Nout
 
-def calc_average():
-    temps = input("Enter temps separated by commas: ")
-    temp_list = [float(temp) for temp in temps.split(",")]
+def calc_average(input):
+    temps = input
+    temp_list = [float(temp) for temp in temps]
     return sum(temp_list) / len(temp_list)
 
 def sort_temperature():
@@ -25,9 +25,9 @@ def sort_temperature():
     temp_list = [float(temp) for temp in temps.split(",")]
     return sorted(temp_list)
 
-def calc_median_temperature():
-    temps = input("Enter temps separated by commas: ")
-    temp_list = [float(temp) for temp in temps.split(",")]
+def calc_median_temperature(input):
+    temps = input
+    temp_list = [float(temp) for temp in temps]
     sorted_temps = sorted(temp_list)
     total = len(sorted_temps)
     if total % 2 == 0:
@@ -35,9 +35,9 @@ def calc_median_temperature():
     else:
         return sorted_temps[total // 2]
 
-def calc_min_max_temperature():
-    temps = input("Enter temps separated by commas: ")
-    temp_list = [float(temp) for temp in temps.split(",")]
+def calc_min_max_temperature(input):
+    temps = input
+    temp_list = [int(temp) for temp in temps]
     return min(temp_list), max(temp_list)
 
 if __name__ == "__main__":
